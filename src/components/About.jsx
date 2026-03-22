@@ -18,7 +18,7 @@ export default function About({ isDark }) {
   return (
     <section
       id="about"
-      className={`relative w-full flex flex-col items-center justify-center px-8 py-24 overflow-hidden ${isDark ? "bg-white text-gray-900" : "bg-[#111] text-white"}`}
+      className={`relative w-full flex flex-col items-center justify-center px-8 pt-14 pb-24 overflow-hidden ${isDark ? "bg-white text-gray-900" : "bg-[#111] text-white"}`}
       style={{ borderRadius: "0 0 0 0" }}
     >
       <style>{`
@@ -43,13 +43,6 @@ export default function About({ isDark }) {
         className="absolute top-0 left-0 right-0 h-24"
         style={{ backgroundColor: "transparent", borderRadius: "0 0 50% 50% / 0 0 60px 60px" }}
       />
-
-      {/* Play button */}
-      <div className="mb-12 mt-16">
-        <button className="w-16 h-16 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-all">
-          <svg className="w-6 h-6 ml-1" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </button>
-      </div>
 
       <div className="max-w-3xl text-center">
         <h2

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cvFile from "../assets/K.K Ranathunga.pdf";
 
 export default function Navbar({ scrollY, isDark, setIsDark }) {
   const solid = scrollY > 60;
@@ -16,7 +17,7 @@ export default function Navbar({ scrollY, isDark, setIsDark }) {
         backdropFilter: solid ? "blur(12px)" : "none" 
       }}
     >
-      <div className={`font-bold text-xl tracking-tight ${isDark ? "text-white" : "text-gray-900"}`}>R.</div>
+      <div className={`font-bold text-xl tracking-tight ${isDark ? "text-white" : "text-gray-900"}`}>KR.</div>
       <div className={`hidden md:flex items-center gap-8 text-sm ${isDark ? "text-gray-400" : "text-gray-600"}`}>
         {["Home", "About", "Works", "Contacts"].map((l) => (
           <a
@@ -30,7 +31,7 @@ export default function Navbar({ scrollY, isDark, setIsDark }) {
       </div>
       <div className="hidden md:flex items-center gap-2">
         <a
-          href="/cv.pdf"
+          href={cvFile}
           target="_blank"
           rel="noopener noreferrer"
           className={`px-5 py-2.5 text-sm rounded-full transition-all ${isDark ? "bg-white text-black hover:bg-gray-200" : "bg-gray-900 text-white hover:bg-gray-700"}`}
